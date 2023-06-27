@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--body-color);
     background-color: #FFFFFF;
-    width: 1440px;
+    width: 100%;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
     box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -22,6 +22,12 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
 a::after {
@@ -39,7 +45,7 @@ a::after {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ul-aress {
+.ul-adress {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -62,6 +68,9 @@ a::after {
 .h-custom {
     font-size: 36px;
     line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
 }
@@ -128,10 +137,17 @@ a::after {
 .cont-footer {
     display: flex;
     align-items: baseline;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
 .container-footer {
-    margin-right: 120px;
+    margin: 100px 120px 100px 156px;
+}
+
+.soc-div {
+    margin-right: 80px;
 }
 
 .icon-footer {
@@ -139,12 +155,12 @@ a::after {
 }
 
 .p-foot {
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
+
 }
 
 .p-foot-index {
@@ -309,7 +325,7 @@ a::after {
     font-weight: 50px;
     block-size: 1440px 600px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
-    max-width: 1440px;
+    max-width: 100%;
 }
 
 .tittle {
@@ -386,6 +402,12 @@ a::after {
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
 .studio {
@@ -682,6 +704,10 @@ a::after {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.div-form {
+    margin-right: 159px;
+}
+
 .p-modal {
     font-weight: 500;
     font-size: 16px;
@@ -870,7 +896,7 @@ input::placeholder {
     margin-bottom: 16px;
 }
 
-.checkbox:checked+.mod-span>.mod-form-icon {
+.input-check:checked+.mod-five-label span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
