@@ -12,6 +12,12 @@ img {
     display: block;
 }
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
 :root {
     --body-color: #434455;
     --border: 1px solid #e7e9fc;
@@ -28,6 +34,14 @@ img {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px 0 15px;
+}
+
+.menu-item {
+    color: #434455;
+    padding: 24px 24px;
+    gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 70px;
 }
 
 a::after {
@@ -49,11 +63,7 @@ a::after {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
-}
+
 
 .nav {
     display: flex;
@@ -143,7 +153,7 @@ a::after {
 }
 
 .container-footer {
-    margin: 100px 120px 100px 156px;
+    margin: 100px 0px 100px 156px;
 }
 
 .soc-div {
@@ -154,14 +164,6 @@ a::after {
     fill: #f4f4fd;
 }
 
-.p-foot {
-    font-weight: 500px;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-
-}
 
 .p-foot-index {
     font-weight: 500;
@@ -335,6 +337,7 @@ a::after {
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 496px;
+    margin-left: 300px;
 }
 
 .team {
@@ -405,9 +408,16 @@ a::after {
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 100%;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
+}
+
+.p-foot {
+    line-height: 1.5;
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 .studio {
@@ -436,13 +446,6 @@ a::after {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
-}
-
-.p-footer {
-    line-height: 1.5;
-    color: #F4F4FD;
-    letter-spacing: 0.02em;
-    max-width: 264px;
 }
 
 .button {
@@ -514,13 +517,6 @@ a::after {
 
 .link:focus {
     color: #404bbf;
-}
-
-.menu-item {
-    color: #434455;
-    padding: 24px 24px;
-    gap: 40px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item:hover {
