@@ -1267,3 +1267,13 @@ input::placeholder {
         width: 428px;
     }
 }
+
+@media screen and (max-width: 428px) {
+    .container-tablet {
+        max-width: 768px;
+    }
+
+    .img {
+        display: none;
+    }
+}
