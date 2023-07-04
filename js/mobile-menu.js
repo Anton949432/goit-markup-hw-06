@@ -7,11 +7,13 @@
   const closeBtn = document.querySelector('.burger-window__btn');
 
   burgerBtn.addEventListener('click', function () {
-    burgerWindow.style.display = 'block';
+    burgerWindow.style.opacity = '1';
+    burgerWindow.style.transform = 'translateX(0)';
   });
 
   closeBtn.addEventListener('click', function () {
-    burgerWindow.style.display = 'none';
+    burgerWindow.style.opacity = '0';
+    burgerWindow.style.transform = 'translateX(-100%)';
   });
 
   const toggleMenu = () => {
