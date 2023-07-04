@@ -1412,3 +1412,35 @@ input::placeholder {
         max-height: 620px;
     }
 }
+
+
+@media (min-resolution: 144dpi) and (min-device-pixel-ratio: 2) {
+    .team-img--1 {
+        background-image: url('../images/imagesteam1@2x.jpg');
+    }
+
+    .team-img--2 {
+        background-image: url('../images/imagesteam2@2x.jpg');
+    }
+
+    .team-img--3 {
+        background-image: url('../images/imagesteam3@2x.jpg');
+    }
+
+    .team-img--4 {
+        background-image: url('../images/imagesteam4@2x.jpg');
+    }
+
+    .li-img--1 {
+        background-image: url('../images/images1@2x.jpg');
+    }
+
+    .li-img--2 {
+        background-image: url('../images/images2@2x.jpg');
+    }
+
+    .li-img--3 {
+        background-image: url('../images/images3@2x.jpg');
+    }
+
+}
