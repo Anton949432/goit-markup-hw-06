@@ -31,6 +31,7 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
+    position: relative;
 }
 
 .menu-item {
@@ -39,7 +40,7 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
-    font-weight: 400;
+    font-weight: 400px;
 }
 
 a::after {
@@ -340,7 +341,7 @@ a::after {
 
 .team {
     background-color: #F4F4FD;
-    padding: 96px 0 120px;
+    padding: 96px 0;
 }
 
 .li-team {
@@ -907,11 +908,146 @@ input::placeholder {
     fill: #F4F4FD;
 }
 
+
+
 .burger-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: black;
     display: none;
 }
 
-@media (max-width: 428px) {
+
+.burger {
+    color: black;
+    margin-left: 50px;
+
+}
+
+
+
+.burger-svg {
+    color: black;
+    margin-left: 50px;
+    width: 32px;
+    height: 32px;
+}
+
+.burger-window {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+
+
+.burger-window__inner {
+    height: 100vh;
+    width: 100vw;
+    padding: 80px 35px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-window__link {
+    text-decoration: none;
+    color: #2E2F42;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.burger-window__contacts-phone {
+    text-decoration: none;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: #4D5AE5;
+}
+
+.burger-window__contacts-mail {
+    text-decoration: none;
+    font-size: 20px;
+    color: #434455;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.burger-window a:hover {
+    color: #404BBF;
+}
+
+
+.burger-window__btn {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #2E2F42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-window__list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.burger-window__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.burger-window__contacts-mail {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.burger-window__soc-list {
+    display: flex;
+    gap: 40px;
+}
+
+.burger-window__soc-item {
+    width: 40px;
+    height: 40px;
+}
+
+.burger-window.burger-window--active {
+    display: block;
+}
+
+@media screen and (max-width: 428px) {
+
+    .burger-btn {
+        display: block;
+    }
+
     body {
         max-width: 428px;
         width: 100%;
@@ -928,38 +1064,10 @@ input::placeholder {
         padding: 0 15px 0 15px;
     }
 
-    .burger {
-        color: black;
-        margin-left: 50px;
-
-    }
-
-    .burger-btn {
-        display: flex;
-        align-items: center;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        margin: 0;
-        padding: 0;
-        color: black;
-
-    }
-
-    .burger-svg {
-        color: black;
-        margin-left: 50px;
-        width: 32px;
-        height: 32px;
-        background-color: black;
-    }
-
     /* header */
     ul[hidden] {
         display: none;
     }
-
-
 
     /* main */
     .main {
@@ -967,33 +1075,45 @@ input::placeholder {
         width: 100%;
     }
 
+    .main-img {
+        width: 428px;
+        height: 432px;
+    }
+
     .orderservice {
         display: flex;
         flex-direction: column;
         gap: 58px;
+        width: 428px;
+        height: 432px;
     }
 
     .button {
         transition: background-color var(--tran-250);
+        max-width: 428px;
         min-width: 169px;
         height: 56px;
         margin: 0 auto;
+        margin-top: 72px;
     }
 
     .tittle {
         margin: 0 auto;
-        margin-bottom: 72px;
         max-width: 320px;
+        height: 80px;
         font-size: 36px;
         line-height: 1.11;
         font-weight: 700;
         letter-spacing: 0.02em;
         text-align: center;
+        box-sizing: border-box;
+        padding-top: 112px;
     }
 
     /* products */
 
     .img-section {
+        min-width: 428px;
         padding-top: 96px;
         padding-bottom: 96px;
         display: block;
@@ -1005,6 +1125,9 @@ input::placeholder {
         max-width: 428px;
         padding-left: 16px;
         padding-right: 16px;
+        margin-top: 96px;
+        align-items: flex-start;
+        gap: 8px;
     }
 
     .list-products {
@@ -1018,6 +1141,8 @@ input::placeholder {
         display: list-item;
         text-align: -webkit-match-parent;
         width: 100%;
+        margin-bottom: 74px;
+
     }
 
     .list-tittle {
@@ -1035,8 +1160,7 @@ input::placeholder {
         line-height: 1.5;
         letter-spacing: 0.02em;
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+
         display: block;
     }
 
@@ -1119,6 +1243,14 @@ input::placeholder {
         display: block;
     }
 
+    .p-foot {
+        display: flex;
+        width: 268px;
+        flex-direction: column;
+        flex-shrink: 0;
+        text-align: left;
+    }
+
     .form {
         display: flex;
         flex-direction: column;
@@ -1126,23 +1258,12 @@ input::placeholder {
         gap: 16px;
         height: min-content;
     }
-}
 
-@media (max-width: 768px) {
-
-    body {
-        max-width: 768px;
-        width: 100%;
+    .modal {
+        width: 428px;
     }
 
-    .logo {
-        padding-top: 24px;
-        padding-bottom: 22px;
-    }
-
-    .container {
-        max-width: 768px;
-        width: 100%;
-        padding: 0 15px 0 15px;
+    .is-hidden {
+        width: 428px;
     }
 }

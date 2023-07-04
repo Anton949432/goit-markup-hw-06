@@ -2,6 +2,17 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const burgerBtn = document.querySelector('.burger-btn');
+  const burgerWindow = document.querySelector('.burger-window');
+  const closeBtn = document.querySelector('.burger-window__btn');
+
+  burgerBtn.addEventListener('click', function () {
+    burgerWindow.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', function () {
+    burgerWindow.style.display = 'none';
+  });
 
   const toggleMenu = () => {
     const isMenuOpen =
